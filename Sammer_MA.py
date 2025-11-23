@@ -17,7 +17,7 @@ st.set_page_config(page_title="Loan Default Marketing Analytics", layout="wide")
 def load_data():
     try:
         # NOTE: Using 'loan_default.csv' for robust Streamlit Cloud deployment
-        df = pd.read_excel('loan_default.xlsx') 
+        df = pd.read_excel('Loan_Sameer.xlsx') 
         return df
     except FileNotFoundError:
         st.error("File 'loan_default.csv' not found. Please ensure the CSV data file is in the repository.")
